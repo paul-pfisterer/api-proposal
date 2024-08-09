@@ -378,6 +378,8 @@ components:
       properties:
         aircraftRegistration:
           type: string
+        serialNumber:
+          type: string  
         name:
           type: string
         aircraftModelCode:
@@ -390,6 +392,12 @@ components:
           type: integer
         yearOfConstruction:
           type: integer
+        travelRange:
+          type: integer
+        speed:
+          type: integer
+        operationAltitude:
+          type: integer  
         outlineImageUrl:
           type: string
         imageUrls:
@@ -398,6 +406,7 @@ components:
             type: string
       required:
         - aircraftRegistration
+        - serialNumber
         - name
         - aircraftModelCode
         - homeBase
@@ -406,6 +415,9 @@ components:
         - yearOfConstruction
         - outlineImageUrl
         - imageUrls
+        - travelRange
+        - speed
+        - operationAltitude
 
     Impression:
       type: object
@@ -414,6 +426,8 @@ components:
           type: string
         imageUrl:
           type: string
+        description:
+          type: string  
       required:
         - date
         - imageUrl
